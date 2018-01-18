@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Тукаева](https://up.htmlacademy.ru/adaptive/13/user/540971).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Быков] (https://up.htmlacademy.ru/htmlcss/19/user/66426).
 
 ---
 
