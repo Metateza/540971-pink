@@ -11,22 +11,22 @@
         src="img/logotype-white-mobile.svg"
         width="75" height="22" alt="Пинк">
       </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+            <a class="site-list__link">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="site-list__link" href="photo.html">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Конкурсы</a>
+            <a class="site-list__link" href="form.html">Конкурсы</a>
           </li>
           <li class="site-list__item">
-            <a href="#">HTML Academy</a>
+            <a class="site-list__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -40,20 +40,20 @@
         <a class="download-app__button button" href="#">Скачать приложение</a>
         <ul class="download-app__list os-list">
           <li class="os-list__item os-list__item--apple">
-            <a href="#">
-              <img src="img/apple-logo.svg" width="47"
+            <a class="os-list__link" href="#">
+              <img class="os-list__img" src="img/apple-logo.svg" width="47"
               height="56" alt="Apple">
             </a>
           </li>
           <li class="os-list__item os-list__item--android">
-            <a href="#">
-              <img src="img/android-logo.svg"
+            <a class="os-list__link" href="#">
+              <img class="os-list__img" src="img/android-logo.svg"
               width="43" height="47" alt="Android">
             </a>
           </li>
           <li class="os-list__item os-list__item--microsoft">
-            <a href="#">
-              <img src="img/microsoft-logo.svg"
+            <a class="os-list__link" href="#">
+              <img class="os-list__img" src="img/microsoft-logo.svg"
               width="44" height="41" alt="Microsoft">
             </a>
           </li>
@@ -64,44 +64,46 @@
 
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам
+        <p class="advantages__title">Устали от серости мегаполиса?</p>
+        <p class="advantages__title">Нам есть, что вам предложить!</p>
+        <ul class="advantages__list advantage">
+          <li class="advantage__item">
+            <h3 class="advantage__title">Поднимает настроение</h3>
+            <p class="advantage__description">Приложение позволит вам
             победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте
+          <li class="advantage__item">
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
+            <p class="advantage__description">Сделайте снимок и украсьте
             его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте,
+          <li class="advantage__item">
+            <h3 class="advantage__title">Заводит новых друзей</h3>
+            <p class="advantage__description">Ставьте лайки, комментируйте,
             делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <img class="advantages__img" src="img/iphone screen #3.png"
+        width="157" height="320" alt="iPhone screen">
       </section>
 
-      <section class="reviews slider">
+      <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <blockquote class="reviews__item slider__item">
           <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__text">«Это приложение перевернуло мой мир
+          <p class="reviews__description">«Это приложение перевернуло мой мир
           и позволило по-новому взглянуть на привычные серые вещи! А
           еще я познакомился со своей будущей женой в комментариях к
           выложенной фотографии!»
         </blockquote>
         <blockquote class="reviews__item slider__item">
           <cite class="reviews__author"></cite>
-          <p class="reviews__text"></p>
+          <p class="reviews__description"></p>
         </blockquote>
         <blockquote class="reviews__item slider__item">
           <cite class="reviews__author"></cite>
-          <p class="reviews__text"></p>
+          <p class="reviews__description"></p>
         </blockquote>
         <p class="reviews__toggles slider__toggles">
           <button class="slider__toggle" type="button">1</button>
@@ -113,46 +115,46 @@
       <table class="price__list slider">
         <caption class="visually-hidden">Наши тарифы</caption>
         <tr>
-          <th class="price__rates slider__item slider__item--basa">
-            <span>База</span><br>1,99 usd
+          <th class="slider__item slider__item--basa">
+            <i class="icon-hit__no"></i>База<span>1,99 usd</span>
           </th>
-          <th class="price__rates slider__item slider__item--standart">
-            <span>Стандарт</span><br>3,99 usd
+          <th class="slider__item slider__item--standart">
+            <i class="icon-hit__yes"></i>Стандарт<span>3,99 usd</span>
           </th>
-          <th class="price__rates slider__item slider__item--unlim">
-            <span>Анлим</span><br>9,99 usd
+          <th class="slider__item slider__item--unlim">
+            <i class="icon-hit__no"></i>Анлим<span>9,99 usd</span>
           </th>
         </tr>
         <tr>
-          <td class="price__item price__item--yes slider__item slider__item--basa">
+          <td class="price__item price__item--yes">
             Розовый фильтр
           </td>
-          <td class="price__item price__item--yes slider__item slider__item--standart">
+          <td class="price__item price__item--yes">
             Розовый фильтр
           </td>
-          <td class="price__item price__item--yes slider__item slider__item--unlim">
+          <td class="price__item price__item--yes">
             Розовый фильтр
           </td>
         </tr>
         <tr>
-          <td class="price__item price__item--no slider__item slider__item--basa">
+          <td class="price__item price__item--no">
             Смайлики
           </td>
-          <td class="price__item price__item--yes slider__item slider__item--standart">
+          <td class="price__item price__item--yes">
             Смайлики
           </td>
-          <td class="price__item price__item--yes slider__item slider__item--unlim">
+          <td class="price__item price__item--yes">
             Смайлики
           </td>
         </tr>
         <tr>
-          <td class="price__item price__item--no slider__item slider__item--basa">
+          <td class="price__item price__item--no">
             Комментрии
           </td>
-          <td class="price__item price__item--no slider__item slider__item--standart">
+          <td class="price__item price__item--no">
             Комментрии
           </td>
-          <td class="price__item price__item--yes slider__item slider__item--unlim">
+          <td class="price__item price__item--yes">
             Комментрии
           </td>
         </tr>
@@ -166,23 +168,23 @@
 
     <footer class="page-footer">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <p class="page-footer__question">Остались вопросы? Свяжитесь с нами</p>
+      <p class="page-footer__title">Остались вопросы? Свяжитесь с нами</p>
       <ul class="page-footer__list contacts">
         <li class="contacts__item">
           <h3 class="contacts__title">Звоните:</h3>
-          <a class="contacts__phone" href="+7 (812) 555-66-66">
+          <a class="contacts__info" href="tel:+7 (812) 555-66-66">
             +7 (812) 555-66-66
           </a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Пишите:</h3>
-          <a class="contacts__email" href="mail@htmlacademy.ru">
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru
           </a>
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Приезжайте в гости</h3>
-          <p class="contacts__adress">ул. Большая Конюшенная, 19/8</p>
+          <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
       <div class="contacts__map"></div>
