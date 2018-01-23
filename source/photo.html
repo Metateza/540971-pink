@@ -11,16 +11,16 @@
         src="img/logotype-white-mobile.svg"
         width="75" height="22" alt="Пинк">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+            <a class="site-list__link">Фотографии</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Конкурсы</a>
@@ -30,18 +30,18 @@
           </li>
         </ul>
       </nav>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
     </header>
 
     <main class="page-photo">
       <section class="photo-users">
-        <h1 class="photo-users__title">Фотографии пользователей</h1>
-          <p class="photo-users__description">Взгляните на фотографии, которые
+        <p class="photo-users__description">Взгляните на фотографии, которые
           выкладывают пользователи! Видите, как не хватает ваших?</p>
       </section>
 
       <section class="gallery">
         <h2 class="visually-hidden">Фотографии и комментарии</h2>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/panorama-mobile.jpg" width="320"
             height="137" alt="Фото Анны">
@@ -57,7 +57,7 @@
             <span class="gallery__likes-number">215</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-1-mobile.jpg" width="280"
             height="180" alt="Фото Левона">
@@ -71,7 +71,7 @@
             <span class="gallery__likes-number">356</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-2-mobile.jpg" width="280"
             height="180" alt="Фото Антона">
@@ -84,7 +84,7 @@
             <span class="gallery__likes-number">666</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-3-mobile.jpg" width="280"
             height="180" alt="Фото Бориса">
@@ -98,7 +98,7 @@
             <span class="gallery__likes-number">215</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-4-mobile.jpg" width="280"
             height="180" alt="Фото Сергея">
@@ -111,7 +111,7 @@
             <span class="gallery__likes-number">4</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-5-mobile.jpg" width="280"
             height="180" alt="Фото Максима">
@@ -124,7 +124,7 @@
             <span class="gallery__likes-number">150</span>
           </p>
         </article>
-        <article class="gallery__item">
+        <article class="gallery__item user-post">
           <a class="gallery__link" href="#">
             <img class="gallery__top-img" src="img/photo-6-mobile.jpg" width="280"
             height="180" alt="Фото Надежды">
@@ -143,10 +143,36 @@
         <h2 class="visually-hidden">Разместите свои фотографии</h2>
           <p class="locate__description">Затмите их всех! Выкладывайте все, что
             накопилось в телефоне!</p>
-        <form class="locate__form form-tuning">
+        <form class="locate__form form-tuning" action="https://echo.htmlacademy.ru"
+        method="get">
           <img class="form-tuning__img" src="img/photo-7-mobile.jpg" width="280"
-          "height="374" alt="Фото с телефона">
-          <!--я не знаю как тут правильно оформить, помоги пожалуйста и объясни((((-->
+          height="374" alt="Фото с телефона">
+          <ul class="form-tuning__list">
+            <li class="form-tuning__item">
+              <label class="form-tuning__label"><img class="form-tuning__icon"
+                width="44" height="44" src="img/crop.svg">
+                <input type="checkbox" id="crop" checked>
+              </label>
+            </li>
+            <li class="form-tuning__item">
+              <label class="form-tuning__label"><img class="form-tuning__icon"
+                width="48" height="43" src="img/fill.svg">
+                <input type="checkbox" id="crop">
+              </label>
+            </li>
+            <li class="form-tuning__item">
+              <label class="form-tuning__label"><img class="form-tuning__icon"
+                width="32" height="32" src="img/contrast.svg">
+                <input type="checkbox" id="contrast">
+              </label>
+            </li>
+          </ul>
+          <div class="form-tuning__controls">
+            <div class="form-tuning__line">
+            <div class="form-tuning__point">
+          </div>
+          <button class="form-tuning__button" type="submit">Запостить</button>
+          <button class="form-tuning__button" type="button">Отмена</button>
         </form>
       </section>
     </main>
