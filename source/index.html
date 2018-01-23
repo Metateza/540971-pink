@@ -11,7 +11,7 @@
         src="img/logotype-white-mobile.svg"
         width="75" height="22" alt="Пинк">
       </a>
-      <button class="main-nav__toggle" type="button">
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
@@ -89,40 +89,45 @@
       </section>
 
       <section class="reviews">
-        <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author">Николай Петров</cite>
-          <p class="reviews__description">«Это приложение перевернуло мой мир
-          и позволило по-новому взглянуть на привычные серые вещи! А
-          еще я познакомился со своей будущей женой в комментариях к
-          выложенной фотографии!»
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author"></cite>
-          <p class="reviews__description"></p>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <cite class="reviews__author"></cite>
-          <p class="reviews__description"></p>
-        </blockquote>
-        <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="reviews__wrapper slider"
+          <h2 class="visually-hidden">Отзывы о приложении</h2>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author">Николай Петров</cite>
+            <p class="reviews__description">«Это приложение перевернуло мой мир
+            и позволило по-новому взглянуть на привычные серые вещи! А
+            еще я познакомился со своей будущей женой в комментариях к
+            выложенной фотографии!»
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author"></cite>
+            <p class="reviews__description"></p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author"></cite>
+            <p class="reviews__description"></p>
+          </blockquote>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
 
       <table class="price__list slider">
         <caption class="visually-hidden">Наши тарифы</caption>
         <tr>
           <th class="slider__item slider__item--basa">
-            <i class="icon-hit__no"></i>База<span>1,99 usd</span>
+            <img class="icon-hit" src="http://placehold.it/150x100"
+            width="" height=""></i>База<span>1,99 usd</span>
           </th>
           <th class="slider__item slider__item--standart">
-            <i class="icon-hit__yes"></i>Стандарт<span>3,99 usd</span>
+            <img class="icon-hit icon-hit--active" src="http://placehold.it/150x100"
+            width="" height=""></i>Стандарт<span>3,99 usd</span>
           </th>
           <th class="slider__item slider__item--unlim">
-            <i class="icon-hit__no"></i>Анлим<span>9,99 usd</span>
+            <img class="icon-hit" src="http://placehold.it/150x100"
+            width="" height="">Анлим<span>9,99 usd</span>
           </th>
         </tr>
         <tr>
