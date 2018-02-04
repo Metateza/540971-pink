@@ -1,5 +1,7 @@
 {
   "extends": "stylelint-config-htmlacademy",
+  
+  "ignoreFiles": "source/less/normalize.less"
 
   "rules": {
     "declaration-no-important": true,
