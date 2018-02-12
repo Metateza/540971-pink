@@ -1,4 +1,39 @@
+.information {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  text-align: center;
+}
+
 .information__title {
   font-weight: 300;
   font-size: @font-size-base + 10px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .information {
+    min-width: @tablet-width;
+    padding-top: 56px;
+  }
+
+  .information__title {
+    width: 380px;
+    margin: 0 auto;
+    font-size: @font-size-base + 26px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .information {
+    min-width: @desktop-width;
+    padding-top: 77px;
+  }
+
+  .information__title {
+    width: 470px;
+    font-size: @font-size-base + 36px;
+    line-height: 50px;
+  }
 }

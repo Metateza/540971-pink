@@ -1,3 +1,16 @@
-.unit-copyright {
-  line-height: 18px;
+@media (min-width: @tablet-width) {
+  .unit-copyright {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    padding: 0;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .unit-copyright {
+    width: 160px;
+    font-size: @font-size-base + 4px;
+  }
 }

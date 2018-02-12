@@ -1,5 +1,11 @@
 .contacts {
   list-style: none;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 38px;
+  padding: 0;
+  padding-bottom: 70px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat bottom;
 }
 
 .contacts__title {
@@ -12,4 +18,41 @@
   font-size: @font-size-base + 10px;
   text-decoration: none;
   color: @color-pink;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 620px;
+    margin-top: 57px;
+    margin-bottom: 98px;
+  }
+
+  .contacts__item {
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    min-width: 940px;
+    margin-top: 68px;
+    padding-bottom: 126px;
+  }
+
+  .contacts__item {
+    &--tel {
+      order: 1;
+    }
+
+    &--mail {
+      order: 3;
+    }
+
+    &--adress {
+      order: 2;
+    }
+  }
 }

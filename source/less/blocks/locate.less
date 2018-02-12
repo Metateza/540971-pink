@@ -1,3 +1,28 @@
+.locate {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 40px;
+  text-align: center;
+
+}
+
 .locate__description {
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .locate {
+    min-width: @tablet-width;
+  }
+
+  .locate__description {
+    font-size: @font-size-base + 4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .locate {
+    min-width: @desktop-width;
+  }
 }
